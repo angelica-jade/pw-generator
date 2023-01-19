@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    background: #8DA9C4;
+/* background behind container? */
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 100%;
+    color: #EEF4ED;
+    margin-bottom: 0;
+}
+.highlight {
+    color: #788BFF;
+}
+span{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid magenta;
+    /* height: 50%;
+    width: 60%; */
+    
+
+}
+#promo {
+    color: #EEF4ED;
+    font-size: 1.25rem;
+}
+#passwords-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn {
+  background: #0B2545;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;  
+  /* Auto layout */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 9px 17px 9px 15px;
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 500;
+   border: none;
+   font-size: 1rem;
+   color: #EEF4ED;
+   margin: 25px 0px; 
+   
+}
+#divider {
+    border: 1px solid #2F3E53;
+    width: 33rem;
+    height: 0px;
+    left: 52px;
+    top: 361px;
+    text-align: center;
+}
+.password {
+    width: 15rem;
+    height: 2rem;
+    background: #273549;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* identical to box height, or 200% */
+    text-align: center;
+    color: #E2FDFF;
+    padding: .25rem;
+    margin: .75rem .25rem;
+}
+#passwords {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+@media (min-width:800px){
+    .container{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 3rem;
+        height: 85%;
+    }
+   span{
+        display: inline;
+   }
+   #divider{
+    margin-bottom: 1rem;
+   }
+   #passwords-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lawngreen;
+    align-items: center;
+   }
+   #btn{
+    max-width: 15rem;
+    ;
+   }
+}
